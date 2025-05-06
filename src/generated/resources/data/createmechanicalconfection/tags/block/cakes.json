@@ -1,0 +1,12 @@
+{
+  "values": [
+    "createmechanicalconfection:raw_cake_batter_block",
+    "createmechanicalconfection:cog_cake_block",
+    "createmechanicalconfection:cog_cake_batter_block",
+    "createmechanicalconfection:filled_cog_cake_batter_block",
+    "createmechanicalconfection:tube_cake_block",
+    "createmechanicalconfection:tube_cake_batter_block",
+    "createmechanicalconfection:filled_tube_cake_batter_block",
+    "#minecraft:candle_cakes"
+  ]
+}

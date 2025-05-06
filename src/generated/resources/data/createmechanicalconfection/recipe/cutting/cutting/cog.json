@@ -1,0 +1,14 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "createmechanicalconfection:cog_cake_block"
+    }
+  ],
+  "results": [
+    {
+      "count": 6,
+      "id": "createmechanicalconfection:cog_cake_slice"
+    }
+  ]
+}

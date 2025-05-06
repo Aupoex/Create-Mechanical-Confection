@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "createmechanicalconfection:tube_cake_batter_block"
+    },
+    {
+      "item": "minecraft:potato"
+    }
+  ],
+  "results": [
+    {
+      "id": "createmechanicalconfection:filled_tube_cake_batter_block"
+    }
+  ]
+}

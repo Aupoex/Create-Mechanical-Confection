@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "bites=0": { "model": "createmechanicalconfection:block/cog_cake_block" },
+    "bites=1": { "model": "createmechanicalconfection:block/cog_cake_block3" },
+    "bites=2": { "model": "createmechanicalconfection:block/cog_cake_block2" },
+    "bites=3": { "model": "createmechanicalconfection:block/cog_cake_block1" }
+  }
+}

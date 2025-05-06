@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "createmechanicalconfection:cog_cake_batter_block"
+    },
+    {
+      "item": "minecraft:sweet_berries"
+    }
+  ],
+  "results": [
+    {
+      "id": "createmechanicalconfection:filled_cog_cake_batter_block"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"3": "createmechanicalconfection:block/tubebatter",
+		"particle": "createmechanicalconfection:block/tubeglass"
+	},
+	"elements": [
+		{
+			"from": [5, 2, 5],
+			"to": [11, 4, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 0, 6]},
+			"faces": {
+				"north": {"uv": [9, 3, 12, 4], "texture": "#3"},
+				"east": {"uv": [9, 4, 12, 5], "texture": "#3"},
+				"south": {"uv": [9, 5, 12, 6], "texture": "#3"},
+				"west": {"uv": [6, 9, 9, 10], "texture": "#3"},
+				"up": {"uv": [9, 3, 6, 0], "texture": "#3"},
+				"down": {"uv": [9, 3, 6, 6], "texture": "#3"}
+			}
+		},
+		{
+			"from": [5.25, 0, 5.25],
+			"to": [10.75, 2, 10.75],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 0, 5]},
+			"faces": {
+				"north": {"uv": [9, 6, 12, 7], "texture": "#3"},
+				"east": {"uv": [9, 7, 12, 8], "texture": "#3"},
+				"south": {"uv": [9, 8, 12, 9], "texture": "#3"},
+				"west": {"uv": [9, 9, 12, 10], "texture": "#3"},
+				"up": {"uv": [9, 9, 6, 6], "texture": "#3"},
+				"down": {"uv": [3, 7, 0, 10], "texture": "#3"}
+			}
+		},
+		{
+			"name": "glass",
+			"from": [5, 4, 5],
+			"to": [11, 11, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 4, 7]},
+			"faces": {
+				"north": {"uv": [0, 0, 3, 3.5], "texture": "#3"},
+				"east": {"uv": [3, 0, 6, 3.5], "texture": "#3"},
+				"south": {"uv": [0, 3.5, 3, 7], "texture": "#3"},
+				"west": {"uv": [3, 3.5, 6, 7], "texture": "#3"},
+				"up": {"uv": [6, 10, 3, 7], "texture": "#3"},
+				"down": {"uv": [12, 0, 9, 3], "texture": "#3"}
+			}
+		},
+		{
+			"from": [7, 4, 7],
+			"to": [9, 7, 9],
+			"light_emission": 7,
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 4, 7]},
+			"faces": {
+				"north": {"uv": [0, 10, 1, 11.5], "texture": "#3"},
+				"east": {"uv": [1, 10, 2, 11.5], "texture": "#3"},
+				"south": {"uv": [2, 10, 3, 11.5], "texture": "#3"},
+				"west": {"uv": [3, 10, 4, 11.5], "texture": "#3"},
+				"up": {"uv": [5, 11, 4, 10], "texture": "#3"},
+				"down": {"uv": [6, 10, 5, 11], "texture": "#3"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "tai",
+			"origin": [7, 0, 6],
+			"color": 0,
+			"children": [0]
+		},
+		{
+			"name": "di",
+			"origin": [7, 0, 5],
+			"color": 0,
+			"children": [1]
+		},
+		{
+			"name": "glass",
+			"origin": [8, 4, 7],
+			"color": 0,
+			"children": [2]
+		},
+		{
+			"name": "xin",
+			"origin": [7, 4, 7],
+			"color": 0,
+			"children": [3]
+		}
+	]
+}

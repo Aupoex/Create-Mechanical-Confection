@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "createmechanicalconfection:item/cog_mold_item"
+  }
+}

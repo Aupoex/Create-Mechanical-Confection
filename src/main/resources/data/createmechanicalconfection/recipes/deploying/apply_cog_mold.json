@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "createmechanicalconfection:raw_cake_batter_block"
+    },
+    {
+      "item": "createmechanicalconfection:cog_mold_item"
+    }
+  ],
+  "results": [
+    {
+      "item": "createmechanicalconfection:cog_cake_batter_block"
+    }
+  ]
+}
