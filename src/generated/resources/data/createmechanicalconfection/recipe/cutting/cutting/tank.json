@@ -1,0 +1,14 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "createmechanicalconfection:tank_cake_block"
+    }
+  ],
+  "results": [
+    {
+      "count": 4,
+      "id": "createmechanicalconfection:tank_cake_slice"
+    }
+  ]
+}

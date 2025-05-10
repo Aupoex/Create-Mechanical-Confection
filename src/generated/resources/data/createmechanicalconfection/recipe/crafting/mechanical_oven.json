@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "D": {
+      "item": "create:electron_tube"
+    },
+    "H": {
+      "item": "create:brass_casing"
+    },
+    "J": {
+      "item": "create:precision_mechanism"
+    },
+    "T": {
+      "item": "create:copper_sheet"
+    }
+  },
+  "pattern": [
+    "HDH",
+    "T T",
+    "HJH"
+  ],
+  "result": {
+    "count": 1,
+    "id": "createmechanicalconfection:mechanical_oven"
+  }
+}

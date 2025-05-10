@@ -1,0 +1,25 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "create:iron_sheet"
+    },
+    {
+      "item": "create:iron_sheet"
+    },
+    {
+      "item": "create:iron_sheet"
+    },
+    {
+      "item": "create:iron_sheet"
+    },
+    {
+      "item": "create:fluid_tank"
+    }
+  ],
+  "results": [
+    {
+      "id": "createmechanicalconfection:tank_mold_item"
+    }
+  ]
+}

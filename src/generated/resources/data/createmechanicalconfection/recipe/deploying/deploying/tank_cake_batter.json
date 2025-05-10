@@ -1,0 +1,17 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "createmechanicalconfection:raw_cake_batter_block"
+    },
+    {
+      "item": "createmechanicalconfection:tank_mold_item"
+    }
+  ],
+  "keep_held_item": true,
+  "results": [
+    {
+      "id": "createmechanicalconfection:tank_cake_batter_block"
+    }
+  ]
+}
