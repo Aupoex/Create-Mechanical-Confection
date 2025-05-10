@@ -43,6 +43,16 @@ public class ModPressingRecipeProvider extends ProcessingRecipeGen {
                     .output(CMCItems.TUBE_MOLD_ITEM.get())
     );
 
+    GeneratedRecipe PRESSING_TANK = create(
+            ResourceLocation.fromNamespaceAndPath(CreateMechanicalConfection.MODID, "pressing/tank"),
+            b -> b.require(AllItems.IRON_SHEET.get())
+                    .require(AllItems.IRON_SHEET.get())
+                    .require(AllItems.IRON_SHEET.get())
+                    .require(AllItems.IRON_SHEET.get())
+                    .require(AllBlocks.FLUID_TANK.get())
+                    .output(CMCItems.TANK_MOLD_ITEM.get())
+    );
+
 }
 
 

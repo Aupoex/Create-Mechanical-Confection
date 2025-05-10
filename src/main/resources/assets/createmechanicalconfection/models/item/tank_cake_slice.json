@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "createmechanicalconfection:item/tank_cake_slice"
+  }
+}

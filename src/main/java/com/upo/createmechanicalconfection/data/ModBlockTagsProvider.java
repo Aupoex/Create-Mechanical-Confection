@@ -37,6 +37,10 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(CMCBlocks.TUBE_CAKE_BATTER_BLOCK.get())
                 .add(CMCBlocks.FILLED_TUBE_CAKE_BATTER_BLOCK.get())
 
+                .add(CMCBlocks.TANK_CAKE_BLOCK.get())
+                .add(CMCBlocks.TANK_CAKE_BATTER_BLOCK.get())
+                .add(CMCBlocks.FILLED_TANK_CAKE_BATTER_BLOCK.get())
+
                 .addTag(BlockTags.CANDLE_CAKES);
 
     }

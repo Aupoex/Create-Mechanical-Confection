@@ -27,6 +27,7 @@ public class CMCCreativeTabs {
 
                         output.accept(CMCItems.COG_CAKE_SLICE.get());
                         output.accept(CMCItems.TUBE_CAKE_SLICE.get());
+                        output.accept(CMCItems.TANK_CAKE_SLICE.get());
 
                         output.accept(CMCItems.COG_MOLD_ITEM.get());
                         output.accept(CMCBlocks.COG_CAKE_BLOCK.get());
@@ -37,6 +38,11 @@ public class CMCCreativeTabs {
                         output.accept(CMCBlocks.TUBE_CAKE_BLOCK.get());
                         output.accept(CMCBlocks.TUBE_CAKE_BATTER_BLOCK.get());
                         output.accept(CMCBlocks.FILLED_TUBE_CAKE_BATTER_BLOCK.get());
+
+                        output.accept(CMCItems.TANK_MOLD_ITEM.get());
+                        output.accept(CMCBlocks.TANK_CAKE_BLOCK.get());
+                        output.accept(CMCBlocks.TANK_CAKE_BATTER_BLOCK.get());
+                        output.accept(CMCBlocks.FILLED_TANK_CAKE_BATTER_BLOCK.get());
                     })
                     .build()
     );

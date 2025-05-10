@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "createmechanicalconfection:item/tank_mold_item"
+  }
+}

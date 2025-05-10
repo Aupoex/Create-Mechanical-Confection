@@ -2,12 +2,15 @@ package com.upo.createmechanicalconfection;
 
 import com.upo.createmechanicalconfection.content.CMCBlockEntities;
 import com.upo.createmechanicalconfection.data.*;
+import com.upo.createmechanicalconfection.interaction.ModArmInteractionPointTypes;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
+import com.upo.createmechanicalconfection.data.ModCraftingRecipeProvider;
+import net.minecraft.resources.ResourceLocation;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 import net.neoforged.api.distmarker.Dist;
@@ -43,6 +46,11 @@ public class CreateMechanicalConfection {
 
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MODID);
 
+    public static ResourceLocation asResource(String path) {
+        return ResourceLocation.fromNamespaceAndPath(MODID, path);
+    }
+
+
     public CreateMechanicalConfection(IEventBus modEventBus, ModContainer modContainer)
     {
         modEventBus.addListener(this::commonSetup);
@@ -50,6 +58,7 @@ public class CreateMechanicalConfection {
         BLOCKS.register(modEventBus);
         ITEMS.register(modEventBus);
         REGISTRATE.registerEventListeners(modEventBus);
+        ModArmInteractionPointTypes.register(modEventBus);
         CMCBlocks.registerAll(modEventBus);
         CMCItems.ITEMS.register(modEventBus);
         CMCBlockEntities.register();
@@ -67,7 +76,7 @@ public class CreateMechanicalConfection {
         event.enqueueWork(() -> {
             ItemBlockRenderTypes.setRenderLayer(CMCBlocks.MECHANICAL_OVEN.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(CMCBlocks.TUBE_CAKE_BLOCK.get(), RenderType.translucent());
-            ItemBlockRenderTypes.setRenderLayer(CMCBlocks.MECHANICAL_OVEN.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(CMCBlocks.TANK_CAKE_BLOCK.get(), RenderType.cutoutMipped());
             BlockEntityRenderers.register(
                     CMCBlockEntities.MECHANICAL_OVEN_BE.get(),
                     MechanicalOvenRenderer::new
@@ -102,11 +111,15 @@ public class CreateMechanicalConfection {
         PackOutput packOutput = generator.getPackOutput();
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
+
+        generator.addProvider(
+                event.includeServer(),
+                new ModCraftingRecipeProvider(packOutput, lookupProvider)
+        );
         generator.addProvider(
                 event.includeServer(),
                 new ModBlockTagsProvider(packOutput, lookupProvider, existingFileHelper)
         );
-
         generator.addProvider(
                 event.includeServer(),
                 new ModMixingRecipeProvider(packOutput, lookupProvider)

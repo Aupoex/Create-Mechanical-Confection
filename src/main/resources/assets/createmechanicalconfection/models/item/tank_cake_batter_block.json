@@ -1,0 +1,35 @@
+{"parent": "createmechanicalconfection:block/tank_cake_batter_block",
+  "display": {
+    "thirdperson_righthand": {
+      "translation": [ 0, 6, 1 ],
+      "scale": [ 0.6, 0.6, 0.6 ]
+    },
+    "thirdperson_lefthand": {
+      "translation": [ 0, 6, 1 ],
+      "scale": [ 0.6, 0.6, 0.6 ]
+    },
+    "firstperson_righthand": {
+      "translation": [ 0, 3, 1 ],
+      "scale": [ 0.5, 0.5, 0.5 ]
+    },
+    "firstperson_lefthand": {
+      "translation": [ 0, 3, 1 ],
+      "scale": [ 0.5, 0.5, 0.5 ]
+    },
+    "gui": {
+      "rotation": [ 30, 225, 0 ],
+      "translation": [ 0, 1, 0 ],
+      "scale": [ 0.7, 0.7, 0.7 ]
+    },
+    "ground": {
+      "rotation": [ 0, 0, 0 ],
+      "translation": [ 0, 7, 0 ],
+      "scale": [ 0.5, 0.5, 0.5 ]
+    },
+    "fixed": {
+      "rotation": [ 0, 180, 0 ],
+      "translation": [ 0, 2, 0 ],
+      "scale": [ 0.7, 0.7, 0.7 ]
+    }
+  }
+}

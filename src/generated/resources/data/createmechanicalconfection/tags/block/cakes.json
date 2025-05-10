@@ -7,6 +7,9 @@
     "createmechanicalconfection:tube_cake_block",
     "createmechanicalconfection:tube_cake_batter_block",
     "createmechanicalconfection:filled_tube_cake_batter_block",
+    "createmechanicalconfection:tank_cake_block",
+    "createmechanicalconfection:tank_cake_batter_block",
+    "createmechanicalconfection:filled_tank_cake_batter_block",
     "#minecraft:candle_cakes"
   ]
 }

@@ -1,0 +1,37 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "createmechanicalconfection:block/tank_cake_4_t",
+		"1": "createmechanicalconfection:block/tank_cake_4_lava",
+		"particle": "createmechanicalconfection:block/tank_cake_4_t"
+	},
+	"elements": [
+		{
+			"from": [3, 0, 3],
+			"to": [13, 16, 13],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 0, 12]},
+			"faces": {
+				"north": {"uv": [0, 0, 5, 8], "texture": "#0"},
+				"east": {"uv": [5, 0, 10, 8], "texture": "#0"},
+				"south": {"uv": [0, 8, 5, 16], "texture": "#0"},
+				"west": {"uv": [5, 8, 10, 16], "texture": "#0"},
+				"up": {"uv": [15, 5, 10, 0], "texture": "#0"},
+				"down": {"uv": [15, 5, 10, 10], "texture": "#0"}
+			}
+		},
+		{
+			"from": [3.251, 0.251, 3.251],
+			"to": [12.749, 15.749, 12.749],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6, 0, 0]},
+			"faces": {
+				"north": {"uv": [0, 0, 4.5, 8], "texture": "#1"},
+				"east": {"uv": [4.5, 0, 9, 8], "texture": "#1"},
+				"south": {"uv": [0, 8, 4.5, 16], "texture": "#1"},
+				"west": {"uv": [4.5, 8, 9, 16], "texture": "#1"},
+				"up": {"uv": [13.5, 4.5, 9, 0], "texture": "#1"},
+				"down": {"uv": [13.5, 4.5, 9, 9], "texture": "#1"}
+			}
+		}
+	]
+}

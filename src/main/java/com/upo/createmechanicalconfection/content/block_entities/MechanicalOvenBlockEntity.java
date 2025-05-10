@@ -75,7 +75,13 @@ public class MechanicalOvenBlockEntity extends BlockEntity {
     }
 
     public static void serverTick(Level level, BlockPos pos, BlockState state, MechanicalOvenBlockEntity be) {
-        if (level == null || level.isClientSide) return;
+        if (level == null || level.isClientSide || be.isRemoved()) {
+            return;
+        }
+        if (be.inventory == null) {
+            return;
+        }
+
         boolean changedNBT = false;
         boolean changedState = false;
 
@@ -289,6 +295,9 @@ public class MechanicalOvenBlockEntity extends BlockEntity {
 
     @Nullable
     public IItemHandler getItemHandlerCapability(@Nullable Direction side) {
+        if (this.isRemoved()) {
+            return null;
+        }
         if (side == Direction.DOWN) {
             return null;
         }

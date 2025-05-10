@@ -4,9 +4,14 @@
     {
       "item": "createmechanicalconfection:tube_cake_batter_block"
     },
-    {
-      "item": "minecraft:potato"
-    }
+    [
+      {
+        "item": "minecraft:potato"
+      },
+      {
+        "item": "minecraft:baked_potato"
+      }
+    ]
   ],
   "results": [
     {

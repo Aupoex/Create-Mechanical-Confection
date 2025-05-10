@@ -1,0 +1,24 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"4": "createmechanicalconfection:block/tank_cake_batter",
+		"particle": "createmechanicalconfection:block/tank_cake_batter"
+	},
+	"elements": [
+		{
+			"from": [3, 0, 3],
+			"to": [13, 16, 13],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 0, 12]},
+			"faces": {
+				"north": {"uv": [0, 0, 2.5, 4], "texture": "#4"},
+				"east": {"uv": [2.5, 0, 5, 4], "texture": "#4"},
+				"south": {"uv": [0, 4, 2.5, 8], "texture": "#4"},
+				"west": {"uv": [2.5, 4, 5, 8], "texture": "#4"},
+				"up": {"uv": [7.5, 10, 5, 7.5], "texture": "#4"},
+				"down": {"uv": [10, 7.5, 7.5, 10], "texture": "#4"}
+			}
+		}
+	],
+	"display": {}
+}

@@ -30,6 +30,7 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.neoforged.neoforge.items.ItemStackHandler;
 import org.jetbrains.annotations.Nullable;
 
+
 public class MechanicalOvenBlock extends BaseEntityBlock {
 
     public static final MapCodec<MechanicalOvenBlock> CODEC = simpleCodec(MechanicalOvenBlock::new);
@@ -131,6 +132,5 @@ public class MechanicalOvenBlock extends BaseEntityBlock {
     public BlockState mirror(BlockState state, Mirror mirror) {
         return state.rotate(mirror.getRotation(state.getValue(FACING)));
     }
-
 }
 

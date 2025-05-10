@@ -33,5 +33,10 @@ public class ModCuttingRecipeProvider extends ProcessingRecipeGen {
             b -> b.require(CMCBlocks.TUBE_CAKE_BLOCK.get())
                     .output(CMCItems.TUBE_CAKE_SLICE.get(), 4)
     );
+    GeneratedRecipe CUTTING_TANK_CAKE = create(
+            ResourceLocation.fromNamespaceAndPath(CreateMechanicalConfection.MODID, "cutting/tank"),
+            b -> b.require(CMCBlocks.TANK_CAKE_BLOCK.get())
+                    .output(CMCItems.TANK_CAKE_SLICE.get(), 4)
+    );
 }
 
