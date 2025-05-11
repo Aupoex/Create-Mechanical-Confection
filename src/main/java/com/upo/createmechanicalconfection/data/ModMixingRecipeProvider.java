@@ -1,12 +1,8 @@
 package com.upo.createmechanicalconfection.data;
 
-import com.simibubi.create.AllFluids;
 import com.simibubi.create.AllItems;
 import com.simibubi.create.AllRecipeTypes;
 import com.simibubi.create.content.processing.recipe.HeatCondition;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipe;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipeSerializer;
 import com.simibubi.create.foundation.data.recipe.ProcessingRecipeGen;
 import com.simibubi.create.foundation.fluid.FluidIngredient;
 import com.simibubi.create.foundation.recipe.IRecipeTypeInfo;
@@ -16,24 +12,14 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.MilkBucketItem;
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.material.Fluid;
-import net.minecraft.world.level.material.Fluids;
-import net.neoforged.neoforge.common.crafting.ConditionalRecipeOutput; // <-- 核心类
 import net.neoforged.neoforge.fluids.FluidStack;
-import net.neoforged.neoforge.common.conditions.ICondition;
-
 import java.util.concurrent.CompletableFuture;
-import java.util.function.UnaryOperator;
-import java.util.stream.Stream;
+
 
 public class ModMixingRecipeProvider extends ProcessingRecipeGen {
 

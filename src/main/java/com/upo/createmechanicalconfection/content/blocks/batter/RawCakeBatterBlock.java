@@ -11,7 +11,7 @@ public class RawCakeBatterBlock extends Block {
     public RawCakeBatterBlock(Properties properties) {
         super(properties);
     }
-    protected static final VoxelShape SHAPE = Block.box(2.0D, 0.0D, 2.0D, 14.0D, 8.0D, 14.0D); // 示例：高度为 6
+    protected static final VoxelShape SHAPE = Block.box(2.0D, 0.0D, 2.0D, 14.0D, 8.0D, 14.0D);
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
         return SHAPE;
