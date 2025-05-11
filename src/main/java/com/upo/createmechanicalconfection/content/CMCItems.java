@@ -5,6 +5,8 @@ import com.upo.createmechanicalconfection.content.items.CakeSpatulaItem;
 import com.upo.createmechanicalconfection.content.items.CogMoldItem;
 import com.upo.createmechanicalconfection.content.items.TankMoldItem;
 import com.upo.createmechanicalconfection.content.items.TubeMoldItem;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
@@ -30,6 +32,8 @@ public class CMCItems {
     );
     public static final FoodProperties COG_CAKE_SLICE_FOOD = new FoodProperties.Builder()
             .nutrition(6)
+            .saturationModifier(1F)
+            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 0), 1.0f)
             .fast()
             .build();
     public static final DeferredHolder<Item, Item> COG_CAKE_SLICE = ITEMS.register("cog_cake_slice",
@@ -45,7 +49,9 @@ public class CMCItems {
             )
     );
     public static final FoodProperties ET_CAKE_SLICE_FOOD = new FoodProperties.Builder()
-            .nutrition(9)
+            .nutrition(6)
+            .saturationModifier(1F)
+            .effect(() -> new MobEffectInstance(MobEffects.GLOWING, 100, 0), 1.0f)
             .fast()
             .build();
     public static final DeferredHolder<Item, Item> TUBE_CAKE_SLICE = ITEMS.register("tube_cake_slice",
@@ -63,6 +69,8 @@ public class CMCItems {
     );
     public static final FoodProperties TANK_CAKE_SLICE_FOOD = new FoodProperties.Builder()
             .nutrition(8)
+            .saturationModifier(1.5F)
+            .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 400, 0), 1.0f)
             .fast()
             .build();
     public static final DeferredHolder<Item, Item> TANK_CAKE_SLICE = ITEMS.register("tank_cake_slice",

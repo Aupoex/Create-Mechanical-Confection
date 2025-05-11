@@ -7,8 +7,11 @@ import com.upo.createmechanicalconfection.CreateMechanicalConfection;
 import com.upo.createmechanicalconfection.content.CMCBlocks;
 import com.upo.createmechanicalconfection.content.CMCItems;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -71,6 +74,36 @@ public class ModDeployingRecipeProvider extends ProcessingRecipeGen {
                     .require(Items.MAGMA_CREAM)
                     .output(CMCBlocks.FILLED_TANK_CAKE_BATTER_BLOCK.get())
     );
+
+
+
+
+    //农夫乐事小刀切片
+    public static final TagKey<Item> FARMERS_DELIGHT_KNIVES_TAG = TagKey.create(
+            Registries.ITEM, ResourceLocation.parse("farmersdelight:tools/knives")
+    );
+    GeneratedRecipe DEPLOYING_COG_CAKE_SLICE_DF = create(
+            ResourceLocation.fromNamespaceAndPath(CreateMechanicalConfection.MODID, "deploying/cog_cake_slice_df"),
+            b -> b.require(CMCBlocks.COG_CAKE_BLOCK.get())
+                    .require(FARMERS_DELIGHT_KNIVES_TAG)
+                    .output(CMCItems.COG_CAKE_SLICE.get(),4)
+                    .whenModLoaded("farmersdelight")
+    );
+    GeneratedRecipe DEPLOYING_TUBE_CAKE_SLICE_DF = create(
+            ResourceLocation.fromNamespaceAndPath(CreateMechanicalConfection.MODID, "deploying/tube_cake_slice_df"),
+            b -> b.require(CMCBlocks.TUBE_CAKE_BLOCK.get())
+                    .require(FARMERS_DELIGHT_KNIVES_TAG)
+                    .output(CMCItems.TUBE_CAKE_SLICE.get(),4)
+                    .whenModLoaded("farmersdelight")
+    );
+    GeneratedRecipe DEPLOYING_TANK_CAKE_SLICE_DF = create(
+            ResourceLocation.fromNamespaceAndPath(CreateMechanicalConfection.MODID, "deploying/tank_cake_slice_df"),
+            b -> b.require(CMCBlocks.TANK_CAKE_BLOCK.get())
+                    .require(FARMERS_DELIGHT_KNIVES_TAG)
+                    .output(CMCItems.TANK_CAKE_SLICE.get(),4)
+                    .whenModLoaded("farmersdelight")
+    );
+
 }
 
 

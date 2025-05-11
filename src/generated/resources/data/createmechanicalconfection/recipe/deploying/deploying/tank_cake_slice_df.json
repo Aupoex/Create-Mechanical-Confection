@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "createmechanicalconfection:tank_cake_block"
+    },
+    {
+      "tag": "farmersdelight:tools/knives"
+    }
+  ],
+  "results": [
+    {
+      "count": 4,
+      "id": "createmechanicalconfection:tank_cake_slice"
+    }
+  ]
+}

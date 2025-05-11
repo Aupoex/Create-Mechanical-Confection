@@ -2,15 +2,23 @@ package com.upo.createmechanicalconfection.content.blocks;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.ItemInteractionResult;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
@@ -27,6 +35,7 @@ import net.minecraft.world.level.pathfinder.PathComputationType;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.neoforged.fml.ModList;
 
 
 public abstract class BaseCakeBlock extends Block {
@@ -35,6 +44,7 @@ public abstract class BaseCakeBlock extends Block {
 
     protected final int maxBites;
     protected final VoxelShape[] shapes;
+    public static final TagKey<Item> KNIVES_TAG = TagKey.create(Registries.ITEM, ResourceLocation.parse("farmersdelight:tools/knives"));
 
     protected BaseCakeBlock(BlockBehaviour.Properties properties, int maxBites, VoxelShape[] shapes) {
         super(properties);
@@ -46,12 +56,9 @@ public abstract class BaseCakeBlock extends Block {
         this.registerDefaultState(this.stateDefinition.any().setValue(BITES, 0));
     }
 
-
     public int getTotalStates() {
         return this.maxBites + 1;
     }
-
-
 
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
@@ -61,7 +68,62 @@ public abstract class BaseCakeBlock extends Block {
 
     @Override
     public ItemInteractionResult useItemOn(ItemStack heldStack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
+
+        if (!level.isClientSide) {
+            if (ModList.get().isLoaded("farmersdelight")) {
+                if (heldStack.is(KNIVES_TAG)) {
+                    return cutCakeWithTool(state, level, pos, player, heldStack);
+                }
+            }
+        }
         return ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
+    }
+
+    protected ItemInteractionResult cutCakeWithTool(BlockState state, Level level, BlockPos pos, Player player, ItemStack toolStack) {
+        int currentBites = state.getValue(BITES);
+        int slicesRemaining = (this.maxBites + 1) - currentBites;
+        if (slicesRemaining > 0) {
+            level.removeBlock(pos, false);
+            level.gameEvent(player, GameEvent.BLOCK_DESTROY, pos);
+            ItemStack sliceToDrop = getCakeSliceItem(state);
+
+            if (!sliceToDrop.isEmpty()) {
+                for (int i = 0; i < slicesRemaining; i++) {
+                    ItemEntity itemEntity = new ItemEntity(level,
+                            pos.getX() + 0.5, pos.getY() + 0.2, pos.getZ() + 0.5,
+                            sliceToDrop.copy());
+                    itemEntity.setDefaultPickUpDelay();
+                    level.addFreshEntity(itemEntity);
+                }
+            }
+            level.playSound(null, pos, SoundEvents.SHEEP_SHEAR, SoundSource.PLAYERS, 1.0F, 1.0F);
+            if (!level.isClientSide && toolStack.isDamageableItem()) {
+                InteractionHand hand = player.getUsedItemHand();
+                EquipmentSlot slot = (hand == InteractionHand.MAIN_HAND) ? EquipmentSlot.MAINHAND : EquipmentSlot.OFFHAND;
+                toolStack.hurtAndBreak(1, player, slot);
+            }
+            return ItemInteractionResult.sidedSuccess(level.isClientSide);
+        }
+
+        return ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
+    }
+    protected ItemStack getCakeSliceItem(BlockState state) {
+        ResourceLocation blockId = BuiltInRegistries.BLOCK.getKey(this);
+        if (blockId == null) {
+            return ItemStack.EMPTY;
+        }
+
+        String path = blockId.getPath();
+        if (path.endsWith("_block")) {
+            String slicePath = path.substring(0, path.length() - "_block".length()) + "_slice";
+            ResourceLocation sliceItemId = ResourceLocation.fromNamespaceAndPath(blockId.getNamespace(), slicePath);
+            Item sliceItem = BuiltInRegistries.ITEM.get(sliceItemId);
+
+            if (sliceItem != null && sliceItem != Items.AIR) {
+                return new ItemStack(sliceItem);
+            }
+        }
+        return ItemStack.EMPTY;
     }
 
     @Override
@@ -84,7 +146,6 @@ public abstract class BaseCakeBlock extends Block {
 
         int currentBites = state.getValue(BITES);
         if (currentBites == this.maxBites -1) {
-            // 直接移除方块
             level.removeBlock(pos, false);
             level.gameEvent(player, GameEvent.BLOCK_DESTROY, pos);
         } else if (currentBites < this.maxBites) {
@@ -92,10 +153,8 @@ public abstract class BaseCakeBlock extends Block {
         } else {
             return InteractionResult.PASS;
         }
-
         return InteractionResult.SUCCESS;
     }
-
 
     protected int getHungerPerBite() {
         return 2;
@@ -103,11 +162,9 @@ public abstract class BaseCakeBlock extends Block {
     protected float getSaturationPerBite() {
         return 0.1F;
     }
-
     protected SoundEvent getEatSound() {
         return SoundEvents.GENERIC_EAT;
     }
-
 
     @Override
     public BlockState updateShape(BlockState stateIn, Direction facing, BlockState facingState, LevelAccessor level, BlockPos currentPos, BlockPos facingPos) {

@@ -106,8 +106,6 @@ public class CMCBlocks {
     );
 
 
-
-
     //电子管蛋糕
     public static final DeferredHolder<Block, TubeCakeBlock> TUBE_CAKE_BLOCK =
             BLOCKS.register("tube_cake_block",

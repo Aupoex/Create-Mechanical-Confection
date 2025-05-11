@@ -33,5 +33,7 @@
   "create.tooltip.createmechanicalconfection.mechanical_oven.condition1": "放在点燃的烈焰人燃烧室上面",
   "create.tooltip.createmechanicalconfection.mechanical_oven.usage": "送入填馅蛋糕胚，静待出炉",
   "create.tooltip.createmechanicalconfection.spatula.summary": "按住[SHIFT]可查看概要",
-  "create.tooltip.createmechanicalconfection.spatula.condition1": "SHIFT+右键以完整地收回蛋糕"
+  "create.tooltip.createmechanicalconfection.spatula.condition1": "SHIFT+右键以完整地收回蛋糕",
+
+  "gui.createmechanicalconfection.jei.category.mechanical_baking": "焙烤"
 }

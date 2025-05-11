@@ -136,7 +136,5 @@ public class CreateMechanicalConfection {
                 event.includeServer(),
                 new ModCuttingRecipeProvider(packOutput, lookupProvider)
         );
-
     }
-
 }

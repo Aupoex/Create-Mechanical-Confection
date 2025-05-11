@@ -17,21 +17,18 @@ public class TankCakeBlock extends BaseCakeBlock {
             Block.box(9.0D, 0.0D, 1.0D, 13.0D, 16.0D, 13.0D)  // bites = 4
     };
 
-
     public TankCakeBlock(BlockBehaviour.Properties properties) {
         super(properties, TANK_CAKE_MAX_BITES, COG_CAKE_SHAPES);
     }
 
 
-
     @Override
     protected int getHungerPerBite() {
-        return 8; //4 饥饿值
+        return 8;
     }
 
     @Override
     protected float getSaturationPerBite() {
-        return 3F; //0.3 饱和度
+        return 1.5F;
     }
-
 }

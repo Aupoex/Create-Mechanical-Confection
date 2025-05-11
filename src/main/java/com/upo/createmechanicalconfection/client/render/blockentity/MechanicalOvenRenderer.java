@@ -62,7 +62,7 @@ public class MechanicalOvenRenderer implements BlockEntityRenderer<MechanicalOve
 
         BakedModel bakedModel = this.itemRenderer.getModel(stackToRender, level, null, seed);
         boolean needsSpecialTranslucentHandling = false;
-        if (stackToRender.getItem() instanceof BlockItem blockItem) { // 首先确保它是 BlockItem
+        if (stackToRender.getItem() instanceof BlockItem blockItem) {
             if (SPECIAL_TRANSLUCENT_CAKES_IN_OVEN.contains(blockItem.getBlock())) {
                 needsSpecialTranslucentHandling = true;
             }

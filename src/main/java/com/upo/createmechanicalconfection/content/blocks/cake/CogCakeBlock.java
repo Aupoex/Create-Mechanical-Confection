@@ -26,12 +26,12 @@ public class CogCakeBlock extends BaseCakeBlock {
 
     @Override
     protected int getHungerPerBite() {
-        return 6; //3 饥饿值
+        return 6;
     }
 
     @Override
     protected float getSaturationPerBite() {
-        return 2F; //0.2 饱和度
+        return 1F;
     }
 }
 

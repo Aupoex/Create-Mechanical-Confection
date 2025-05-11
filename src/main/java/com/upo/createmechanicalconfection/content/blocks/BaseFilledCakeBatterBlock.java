@@ -43,7 +43,6 @@ public abstract class BaseFilledCakeBatterBlock extends BaseCakeBatterBlock {
                         CreateMechanicalConfection.MODID,
                         resultPath
                 );
-
                 Optional<Block> resultBlockOptional = BuiltInRegistries.BLOCK.getOptional(resultLocation);
                 if (resultBlockOptional.isPresent()) {
                     Item resultItem = resultBlockOptional.get().asItem();
@@ -53,14 +52,10 @@ public abstract class BaseFilledCakeBatterBlock extends BaseCakeBatterBlock {
                 }
             }
         }
-
         return Items.AIR;
     }
-
     public int getBakingDuration() {
         return 200;
     }
-
-
 }
 

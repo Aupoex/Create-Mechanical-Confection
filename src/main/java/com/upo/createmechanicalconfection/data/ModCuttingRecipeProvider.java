@@ -26,7 +26,7 @@ public class ModCuttingRecipeProvider extends ProcessingRecipeGen {
     GeneratedRecipe CUTTING_COG_CAKE = create(
             ResourceLocation.fromNamespaceAndPath(CreateMechanicalConfection.MODID, "cutting/cog"),
             b -> b.require(CMCBlocks.COG_CAKE_BLOCK.get())
-                    .output(CMCItems.COG_CAKE_SLICE.get(), 6)
+                    .output(CMCItems.COG_CAKE_SLICE.get(), 4)
     );
     GeneratedRecipe CUTTING_TUBE_CAKE = create(
             ResourceLocation.fromNamespaceAndPath(CreateMechanicalConfection.MODID, "cutting/tube"),

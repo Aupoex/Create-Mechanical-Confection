@@ -16,23 +16,18 @@ public class TubeCakeBlock extends BaseCakeBlock {
             Block.box(9.0D, 0.0D, 1.0D, 13.0D, 11.0D, 13.0D)  // bites = 4
     };
 
-
     public TubeCakeBlock(BlockBehaviour.Properties properties) {
         super(properties, TUBE_CAKE_MAX_BITES, TUBE_CAKE_SHAPES);
     }
 
-
-
     @Override
     protected int getHungerPerBite() {
-        return 6; //  3 饥饿值
+        return 6;
     }
 
     @Override
     protected float getSaturationPerBite() {
-        return 2F; //0.2 饱和度
+        return 1F;
     }
-
-
 }
 

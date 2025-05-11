@@ -12,7 +12,6 @@ import com.simibubi.create.foundation.fluid.FluidIngredient;
 import com.simibubi.create.foundation.recipe.IRecipeTypeInfo;
 import com.upo.createmechanicalconfection.CreateMechanicalConfection;
 import com.upo.createmechanicalconfection.content.CMCBlocks;
-import com.upo.createmechanicalconfection.data.conditions.ModLoadedCondition;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;

@@ -3,6 +3,7 @@ package com.upo.createmechanicalconfection.content.block_entities;
 import com.upo.createmechanicalconfection.content.CMCBlockEntities;
 import com.upo.createmechanicalconfection.content.blocks.BaseFilledCakeBatterBlock;
 import com.upo.createmechanicalconfection.content.blocks.MechanicalOvenBlock;
+import com.upo.createmechanicalconfection.data.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.HolderLookup;
@@ -16,9 +17,12 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.items.IItemHandler;
 import net.neoforged.neoforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
@@ -149,8 +153,30 @@ public class MechanicalOvenBlockEntity extends BlockEntity {
 
     protected void updateHeatSource(Level level, BlockPos pos) {
         BlockState belowState = level.getBlockState(pos.below());
-        HeatLevel heatLevel = BlazeBurnerBlock.getHeatLevelOf(belowState);
-        this.heated = heatLevel.isAtLeast(HeatLevel.KINDLED);
+        boolean newHeatedState = false;
+
+
+        if (belowState.getBlock() instanceof BlazeBurnerBlock) {
+            HeatLevel heatLevel = BlazeBurnerBlock.getHeatLevelOf(belowState);
+            if (heatLevel.isAtLeast(HeatLevel.KINDLED)) {
+                newHeatedState = true;
+            }
+        }
+
+        if (!newHeatedState && ModList.get().isLoaded("farmersdelight")) {
+            if (belowState.is(ModTags.Blocks.FARMERS_DELIGHT_HEAT_SOURCES)) {
+                if (belowState.hasProperty(BlockStateProperties.LIT) && belowState.getValue(BlockStateProperties.LIT)) {
+                    newHeatedState = true;
+                }
+            }
+        }
+        if (!newHeatedState) {
+            if (belowState.is(Blocks.MAGMA_BLOCK)) {
+                newHeatedState = true;
+            }
+        }
+
+        this.heated = newHeatedState;
     }
 
     protected boolean canProcess() {
@@ -171,7 +197,7 @@ public class MechanicalOvenBlockEntity extends BlockEntity {
         if (resultItem == Items.AIR) {
             return false;
         }
-        ItemStack resultStack = new ItemStack(resultItem); // 假设配方输出数量为1
+        ItemStack resultStack = new ItemStack(resultItem);
 
         int inputNeeded = 1;
         if (inputStack.getCount() < inputNeeded) {
