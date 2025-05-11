@@ -29,9 +29,15 @@
   "block.createmechanicalconfection.filled_tank_cake_batter_block": "Filled Lava Tank Cake Batter Block",
   "item.createmechanicalconfection.filled_tank_cake_batter_block": "Filled Lava Tank Cake Batter Block",
   "item.createmechanicalconfection.tank_cake_slice": "Lava Tank Cake Slice",
-  "create.tooltip.createmechanicalconfection.mechanical_oven.summary": "Hold [SHIFT] for details",
+  "create.tooltip.createmechanicalconfection.mechanical_oven.summary": "Hold [Shift] for details",
   "create.tooltip.createmechanicalconfection.mechanical_oven.condition1": "Requires active Blaze Burner beneath",
   "create.tooltip.createmechanicalconfection.mechanical_oven.usage": "Insert filled batter blocks and await confection",
-  "create.tooltip.createmechanicalconfection.spatula.summary": "Hold [SHIFT] for details",
-  "create.tooltip.createmechanicalconfection.spatula.condition1": "Sneak+Right-click to extract intact cakes"
+  "create.tooltip.createmechanicalconfection.spatula.summary": "Hold [Shift] for details",
+  "create.tooltip.createmechanicalconfection.spatula.condition1": "Sneak+Right-click to extract intact cakes",
+  "gui.createmechanicalconfection.jei.category.mechanical_baking": "Baking",
+  "block.createmechanicalconfection.food_tray": "Food Tray",
+  "item.createmechanicalconfection.food_tray": "Food Tray",
+  "create.tooltip.createmechanicalconfection.tray.summary": "Hold [Shift] for details",
+  "create.tooltip.createmechanicalconfection.tray.condition1": "Hold a food item in Create",
+  "create.tooltip.createmechanicalconfection.tray.usage": "and right-click to place it."
 }

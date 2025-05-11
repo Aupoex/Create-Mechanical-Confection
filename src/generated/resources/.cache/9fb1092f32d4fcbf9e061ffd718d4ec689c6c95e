@@ -1,5 +1,7 @@
-// 1.21.1	2025-05-10T10:16:20.7318684	Recipes
+// 1.21.1	2025-05-11T21:47:30.5430336	Recipes
+4e345f197582687651e8ff4faaafb73468a8840e data/createmechanicalconfection/advancement/recipes/decorations/crafting/tray.json
 beb07d9e9221627ff7f2663a05349073eb845a08 data/createmechanicalconfection/advancement/recipes/redstone/crafting/mechanical_oven.json
 c18fa84766a6f841f97f245f2a9b93e20f002eaa data/createmechanicalconfection/advancement/recipes/tools/crafting/cake_spatula.json
 3c42a63c83c6bed43920a0ff0341add1d7e8df11 data/createmechanicalconfection/recipe/crafting/cake_spatula.json
 9f2e7717138d0b4112a285658b9753996826c6a4 data/createmechanicalconfection/recipe/crafting/mechanical_oven.json
+3b4d2a1c2c6c221abb76f6530d6f2ae5a90b35f8 data/createmechanicalconfection/recipe/crafting/tray.json

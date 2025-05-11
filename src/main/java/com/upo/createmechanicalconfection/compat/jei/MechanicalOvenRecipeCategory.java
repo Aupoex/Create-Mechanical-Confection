@@ -46,8 +46,6 @@ public class MechanicalOvenRecipeCategory implements IRecipeCategory<OvenDisplay
     private final int burnerAnimX = 20;
     private final int burnerAnimY = 13;
 
-    private final int arrowX = 35;
-    private final int arrowY = 22;
 
     public MechanicalOvenRecipeCategory(IGuiHelper guiHelper) {
         this.title = Component.translatable("gui." + CreateMechanicalConfection.MODID + ".jei.category.mechanical_baking");

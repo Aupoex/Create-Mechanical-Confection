@@ -13,6 +13,8 @@ import com.upo.createmechanicalconfection.content.blocks.batter.CogCakeBatterBlo
 import com.upo.createmechanicalconfection.content.blocks.batter.RawCakeBatterBlock;
 import com.upo.createmechanicalconfection.content.blocks.filled.FilledTankCakeBatterBlock;
 import com.upo.createmechanicalconfection.content.blocks.filled.FilledTubeCakeBatterBlock;
+import com.upo.createmechanicalconfection.content.blocks.foodtray.FoodTrayBlock;
+import com.upo.createmechanicalconfection.content.items.FoodTrayBlockItem;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -51,6 +53,20 @@ public class CMCBlocks {
             .item(MechanicalOvenBlockItem::new)
             .build()
             .register();
+
+    //垫子
+    public static final DeferredHolder<Block, Block> FOOD_TRAY = BLOCKS.register("food_tray",
+            () -> new FoodTrayBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.WOOD)
+                    .strength(0.5f)
+                    .sound(SoundType.WOOD)
+                    .noOcclusion()
+
+            )
+    );
+    public static final DeferredHolder<Item, Item> FOOD_TRAY_ITEM = ITEMS.register("food_tray",
+            () -> new FoodTrayBlockItem(FOOD_TRAY.get(), new Item.Properties())
+    );
 
 
     //原始蛋糕胚
@@ -182,12 +198,8 @@ public class CMCBlocks {
     );
 
 
-
-
     public static void registerAll(IEventBus modEventBus) {
         BLOCKS.register(modEventBus);
         ITEMS.register(modEventBus);
-
     }
-    public static void registerAll() {}
 }

@@ -24,6 +24,7 @@ public class ModCraftingRecipeProvider extends RecipeProvider {
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
 
+        //烤箱
         ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, CMCBlocks.MECHANICAL_OVEN.get())
                 .pattern("HDH")
                 .pattern("T T")
@@ -47,6 +48,15 @@ public class ModCraftingRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_iron_sheet", has(AllItems.IRON_SHEET.get()))
                 .unlockedBy("has_stick", has(Items.STICK))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(CreateMechanicalConfection.MODID, "crafting/cake_spatula"));
+
+        //食物垫
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, CMCBlocks.FOOD_TRAY_ITEM.get())
+                .pattern("   ")
+                .pattern("CCC")
+                .pattern("   ")
+                .define('C', AllItems.CARDBOARD.get())
+                .unlockedBy("has_cardboard", has(AllItems.CARDBOARD.get()))
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(CreateMechanicalConfection.MODID, "crafting/tray"));
     }
 
 }

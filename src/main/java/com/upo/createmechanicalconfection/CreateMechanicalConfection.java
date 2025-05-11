@@ -62,6 +62,7 @@ public class CreateMechanicalConfection {
         CMCBlocks.registerAll(modEventBus);
         CMCItems.ITEMS.register(modEventBus);
         CMCBlockEntities.register();
+        CMCBlockEntities.register(modEventBus);
         CMCCreativeTabs.register(modEventBus);
         NeoForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::commonSetup);
@@ -76,6 +77,7 @@ public class CreateMechanicalConfection {
         event.enqueueWork(() -> {
             ItemBlockRenderTypes.setRenderLayer(CMCBlocks.MECHANICAL_OVEN.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(CMCBlocks.TUBE_CAKE_BLOCK.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(CMCBlocks.FOOD_TRAY.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(CMCBlocks.TANK_CAKE_BLOCK.get(), RenderType.cutoutMipped());
             BlockEntityRenderers.register(
                     CMCBlockEntities.MECHANICAL_OVEN_BE.get(),
@@ -136,5 +138,10 @@ public class CreateMechanicalConfection {
                 event.includeServer(),
                 new ModCuttingRecipeProvider(packOutput, lookupProvider)
         );
+        generator.addProvider(
+                event.includeClient(),
+                new ModBlockStateProvider(packOutput, CreateMechanicalConfection.MODID, existingFileHelper)
+        );
+
     }
 }

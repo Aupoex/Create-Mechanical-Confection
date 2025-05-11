@@ -29,11 +29,15 @@
   "item.createmechanicalconfection.cog_cake_slice": "齿轮蛋糕切片",
   "item.createmechanicalconfection.tube_cake_slice": "电子管蛋糕切片",
   "item.createmechanicalconfection.tank_cake_slice": "熔岩储罐蛋糕切片",
-  "create.tooltip.createmechanicalconfection.mechanical_oven.summary": "按住[SHIFT]可查看概要",
+  "create.tooltip.createmechanicalconfection.mechanical_oven.summary": "按住[Shift]可查看概要",
   "create.tooltip.createmechanicalconfection.mechanical_oven.condition1": "放在点燃的烈焰人燃烧室上面",
   "create.tooltip.createmechanicalconfection.mechanical_oven.usage": "送入填馅蛋糕胚，静待出炉",
-  "create.tooltip.createmechanicalconfection.spatula.summary": "按住[SHIFT]可查看概要",
-  "create.tooltip.createmechanicalconfection.spatula.condition1": "SHIFT+右键以完整地收回蛋糕",
-
-  "gui.createmechanicalconfection.jei.category.mechanical_baking": "焙烤"
+  "create.tooltip.createmechanicalconfection.spatula.summary": "按住[Shift]可查看概要",
+  "create.tooltip.createmechanicalconfection.spatula.condition1": "Shift+右键以完整地收回蛋糕",
+  "gui.createmechanicalconfection.jei.category.mechanical_baking": "焙烤",
+  "block.createmechanicalconfection.food_tray": "食物垫",
+  "item.createmechanicalconfection.food_tray": "食物垫",
+  "create.tooltip.createmechanicalconfection.tray.summary": "按住[Shift]可查看概要",
+  "create.tooltip.createmechanicalconfection.tray.condition1": "手持机械动力的食物",
+  "create.tooltip.createmechanicalconfection.tray.usage": "右键以放置"
 }

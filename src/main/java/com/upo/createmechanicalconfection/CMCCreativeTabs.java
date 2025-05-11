@@ -24,6 +24,7 @@ public class CMCCreativeTabs {
                         output.accept(CMCBlocks.RAW_CAKE_BATTER_BLOCK.get());
 
                         output.accept(CMCItems.CAKE_SPATULA.get());
+                        output.accept(CMCBlocks.FOOD_TRAY_ITEM.get());
 
                         output.accept(CMCItems.COG_CAKE_SLICE.get());
                         output.accept(CMCItems.TUBE_CAKE_SLICE.get());

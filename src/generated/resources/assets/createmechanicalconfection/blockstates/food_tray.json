@@ -1,0 +1,454 @@
+{
+  "variants": {
+    "facing=east,item_type=bar_of_chocolate,stack_count=0": {
+      "model": "createmechanicalconfection:block/tray/tray",
+      "y": 270
+    },
+    "facing=east,item_type=bar_of_chocolate,stack_count=1": {
+      "model": "createmechanicalconfection:block/tray/food_tray_bar_of_chocolate_1",
+      "y": 270
+    },
+    "facing=east,item_type=bar_of_chocolate,stack_count=2": {
+      "model": "createmechanicalconfection:block/tray/food_tray_bar_of_chocolate_2",
+      "y": 270
+    },
+    "facing=east,item_type=bar_of_chocolate,stack_count=3": {
+      "model": "createmechanicalconfection:block/tray/food_tray_bar_of_chocolate_3",
+      "y": 270
+    },
+    "facing=east,item_type=bar_of_chocolate,stack_count=4": {
+      "model": "createmechanicalconfection:block/tray/food_tray_bar_of_chocolate_3",
+      "y": 270
+    },
+    "facing=east,item_type=builders_tea,stack_count=0": {
+      "model": "createmechanicalconfection:block/tray/tray",
+      "y": 270
+    },
+    "facing=east,item_type=builders_tea,stack_count=1": {
+      "model": "createmechanicalconfection:block/tray/food_tray_builders_tea_1",
+      "y": 270
+    },
+    "facing=east,item_type=builders_tea,stack_count=2": {
+      "model": "createmechanicalconfection:block/tray/food_tray_builders_tea_1",
+      "y": 270
+    },
+    "facing=east,item_type=builders_tea,stack_count=3": {
+      "model": "createmechanicalconfection:block/tray/food_tray_builders_tea_1",
+      "y": 270
+    },
+    "facing=east,item_type=builders_tea,stack_count=4": {
+      "model": "createmechanicalconfection:block/tray/food_tray_builders_tea_1",
+      "y": 270
+    },
+    "facing=east,item_type=chocolate_glazed_berries,stack_count=0": {
+      "model": "createmechanicalconfection:block/tray/tray",
+      "y": 270
+    },
+    "facing=east,item_type=chocolate_glazed_berries,stack_count=1": {
+      "model": "createmechanicalconfection:block/tray/food_tray_chocolate_glazed_berries_1",
+      "y": 270
+    },
+    "facing=east,item_type=chocolate_glazed_berries,stack_count=2": {
+      "model": "createmechanicalconfection:block/tray/food_tray_chocolate_glazed_berries_2",
+      "y": 270
+    },
+    "facing=east,item_type=chocolate_glazed_berries,stack_count=3": {
+      "model": "createmechanicalconfection:block/tray/food_tray_chocolate_glazed_berries_3",
+      "y": 270
+    },
+    "facing=east,item_type=chocolate_glazed_berries,stack_count=4": {
+      "model": "createmechanicalconfection:block/tray/food_tray_chocolate_glazed_berries_3",
+      "y": 270
+    },
+    "facing=east,item_type=honeyed_apple,stack_count=0": {
+      "model": "createmechanicalconfection:block/tray/tray",
+      "y": 270
+    },
+    "facing=east,item_type=honeyed_apple,stack_count=1": {
+      "model": "createmechanicalconfection:block/tray/food_tray_honeyed_apple_1",
+      "y": 270
+    },
+    "facing=east,item_type=honeyed_apple,stack_count=2": {
+      "model": "createmechanicalconfection:block/tray/food_tray_honeyed_apple_2",
+      "y": 270
+    },
+    "facing=east,item_type=honeyed_apple,stack_count=3": {
+      "model": "createmechanicalconfection:block/tray/food_tray_honeyed_apple_3",
+      "y": 270
+    },
+    "facing=east,item_type=honeyed_apple,stack_count=4": {
+      "model": "createmechanicalconfection:block/tray/food_tray_honeyed_apple_4",
+      "y": 270
+    },
+    "facing=east,item_type=none,stack_count=0": {
+      "model": "createmechanicalconfection:block/tray/tray",
+      "y": 270
+    },
+    "facing=east,item_type=none,stack_count=1": {
+      "model": "createmechanicalconfection:block/tray/tray",
+      "y": 270
+    },
+    "facing=east,item_type=none,stack_count=2": {
+      "model": "createmechanicalconfection:block/tray/tray",
+      "y": 270
+    },
+    "facing=east,item_type=none,stack_count=3": {
+      "model": "createmechanicalconfection:block/tray/tray",
+      "y": 270
+    },
+    "facing=east,item_type=none,stack_count=4": {
+      "model": "createmechanicalconfection:block/tray/tray",
+      "y": 270
+    },
+    "facing=east,item_type=sweet_roll,stack_count=0": {
+      "model": "createmechanicalconfection:block/tray/tray",
+      "y": 270
+    },
+    "facing=east,item_type=sweet_roll,stack_count=1": {
+      "model": "createmechanicalconfection:block/tray/food_tray_sweet_roll_1",
+      "y": 270
+    },
+    "facing=east,item_type=sweet_roll,stack_count=2": {
+      "model": "createmechanicalconfection:block/tray/food_tray_sweet_roll_2",
+      "y": 270
+    },
+    "facing=east,item_type=sweet_roll,stack_count=3": {
+      "model": "createmechanicalconfection:block/tray/food_tray_sweet_roll_3",
+      "y": 270
+    },
+    "facing=east,item_type=sweet_roll,stack_count=4": {
+      "model": "createmechanicalconfection:block/tray/food_tray_sweet_roll_3",
+      "y": 270
+    },
+    "facing=north,item_type=bar_of_chocolate,stack_count=0": {
+      "model": "createmechanicalconfection:block/tray/tray",
+      "y": 180
+    },
+    "facing=north,item_type=bar_of_chocolate,stack_count=1": {
+      "model": "createmechanicalconfection:block/tray/food_tray_bar_of_chocolate_1",
+      "y": 180
+    },
+    "facing=north,item_type=bar_of_chocolate,stack_count=2": {
+      "model": "createmechanicalconfection:block/tray/food_tray_bar_of_chocolate_2",
+      "y": 180
+    },
+    "facing=north,item_type=bar_of_chocolate,stack_count=3": {
+      "model": "createmechanicalconfection:block/tray/food_tray_bar_of_chocolate_3",
+      "y": 180
+    },
+    "facing=north,item_type=bar_of_chocolate,stack_count=4": {
+      "model": "createmechanicalconfection:block/tray/food_tray_bar_of_chocolate_3",
+      "y": 180
+    },
+    "facing=north,item_type=builders_tea,stack_count=0": {
+      "model": "createmechanicalconfection:block/tray/tray",
+      "y": 180
+    },
+    "facing=north,item_type=builders_tea,stack_count=1": {
+      "model": "createmechanicalconfection:block/tray/food_tray_builders_tea_1",
+      "y": 180
+    },
+    "facing=north,item_type=builders_tea,stack_count=2": {
+      "model": "createmechanicalconfection:block/tray/food_tray_builders_tea_1",
+      "y": 180
+    },
+    "facing=north,item_type=builders_tea,stack_count=3": {
+      "model": "createmechanicalconfection:block/tray/food_tray_builders_tea_1",
+      "y": 180
+    },
+    "facing=north,item_type=builders_tea,stack_count=4": {
+      "model": "createmechanicalconfection:block/tray/food_tray_builders_tea_1",
+      "y": 180
+    },
+    "facing=north,item_type=chocolate_glazed_berries,stack_count=0": {
+      "model": "createmechanicalconfection:block/tray/tray",
+      "y": 180
+    },
+    "facing=north,item_type=chocolate_glazed_berries,stack_count=1": {
+      "model": "createmechanicalconfection:block/tray/food_tray_chocolate_glazed_berries_1",
+      "y": 180
+    },
+    "facing=north,item_type=chocolate_glazed_berries,stack_count=2": {
+      "model": "createmechanicalconfection:block/tray/food_tray_chocolate_glazed_berries_2",
+      "y": 180
+    },
+    "facing=north,item_type=chocolate_glazed_berries,stack_count=3": {
+      "model": "createmechanicalconfection:block/tray/food_tray_chocolate_glazed_berries_3",
+      "y": 180
+    },
+    "facing=north,item_type=chocolate_glazed_berries,stack_count=4": {
+      "model": "createmechanicalconfection:block/tray/food_tray_chocolate_glazed_berries_3",
+      "y": 180
+    },
+    "facing=north,item_type=honeyed_apple,stack_count=0": {
+      "model": "createmechanicalconfection:block/tray/tray",
+      "y": 180
+    },
+    "facing=north,item_type=honeyed_apple,stack_count=1": {
+      "model": "createmechanicalconfection:block/tray/food_tray_honeyed_apple_1",
+      "y": 180
+    },
+    "facing=north,item_type=honeyed_apple,stack_count=2": {
+      "model": "createmechanicalconfection:block/tray/food_tray_honeyed_apple_2",
+      "y": 180
+    },
+    "facing=north,item_type=honeyed_apple,stack_count=3": {
+      "model": "createmechanicalconfection:block/tray/food_tray_honeyed_apple_3",
+      "y": 180
+    },
+    "facing=north,item_type=honeyed_apple,stack_count=4": {
+      "model": "createmechanicalconfection:block/tray/food_tray_honeyed_apple_4",
+      "y": 180
+    },
+    "facing=north,item_type=none,stack_count=0": {
+      "model": "createmechanicalconfection:block/tray/tray",
+      "y": 180
+    },
+    "facing=north,item_type=none,stack_count=1": {
+      "model": "createmechanicalconfection:block/tray/tray",
+      "y": 180
+    },
+    "facing=north,item_type=none,stack_count=2": {
+      "model": "createmechanicalconfection:block/tray/tray",
+      "y": 180
+    },
+    "facing=north,item_type=none,stack_count=3": {
+      "model": "createmechanicalconfection:block/tray/tray",
+      "y": 180
+    },
+    "facing=north,item_type=none,stack_count=4": {
+      "model": "createmechanicalconfection:block/tray/tray",
+      "y": 180
+    },
+    "facing=north,item_type=sweet_roll,stack_count=0": {
+      "model": "createmechanicalconfection:block/tray/tray",
+      "y": 180
+    },
+    "facing=north,item_type=sweet_roll,stack_count=1": {
+      "model": "createmechanicalconfection:block/tray/food_tray_sweet_roll_1",
+      "y": 180
+    },
+    "facing=north,item_type=sweet_roll,stack_count=2": {
+      "model": "createmechanicalconfection:block/tray/food_tray_sweet_roll_2",
+      "y": 180
+    },
+    "facing=north,item_type=sweet_roll,stack_count=3": {
+      "model": "createmechanicalconfection:block/tray/food_tray_sweet_roll_3",
+      "y": 180
+    },
+    "facing=north,item_type=sweet_roll,stack_count=4": {
+      "model": "createmechanicalconfection:block/tray/food_tray_sweet_roll_3",
+      "y": 180
+    },
+    "facing=south,item_type=bar_of_chocolate,stack_count=0": {
+      "model": "createmechanicalconfection:block/tray/tray"
+    },
+    "facing=south,item_type=bar_of_chocolate,stack_count=1": {
+      "model": "createmechanicalconfection:block/tray/food_tray_bar_of_chocolate_1"
+    },
+    "facing=south,item_type=bar_of_chocolate,stack_count=2": {
+      "model": "createmechanicalconfection:block/tray/food_tray_bar_of_chocolate_2"
+    },
+    "facing=south,item_type=bar_of_chocolate,stack_count=3": {
+      "model": "createmechanicalconfection:block/tray/food_tray_bar_of_chocolate_3"
+    },
+    "facing=south,item_type=bar_of_chocolate,stack_count=4": {
+      "model": "createmechanicalconfection:block/tray/food_tray_bar_of_chocolate_3"
+    },
+    "facing=south,item_type=builders_tea,stack_count=0": {
+      "model": "createmechanicalconfection:block/tray/tray"
+    },
+    "facing=south,item_type=builders_tea,stack_count=1": {
+      "model": "createmechanicalconfection:block/tray/food_tray_builders_tea_1"
+    },
+    "facing=south,item_type=builders_tea,stack_count=2": {
+      "model": "createmechanicalconfection:block/tray/food_tray_builders_tea_1"
+    },
+    "facing=south,item_type=builders_tea,stack_count=3": {
+      "model": "createmechanicalconfection:block/tray/food_tray_builders_tea_1"
+    },
+    "facing=south,item_type=builders_tea,stack_count=4": {
+      "model": "createmechanicalconfection:block/tray/food_tray_builders_tea_1"
+    },
+    "facing=south,item_type=chocolate_glazed_berries,stack_count=0": {
+      "model": "createmechanicalconfection:block/tray/tray"
+    },
+    "facing=south,item_type=chocolate_glazed_berries,stack_count=1": {
+      "model": "createmechanicalconfection:block/tray/food_tray_chocolate_glazed_berries_1"
+    },
+    "facing=south,item_type=chocolate_glazed_berries,stack_count=2": {
+      "model": "createmechanicalconfection:block/tray/food_tray_chocolate_glazed_berries_2"
+    },
+    "facing=south,item_type=chocolate_glazed_berries,stack_count=3": {
+      "model": "createmechanicalconfection:block/tray/food_tray_chocolate_glazed_berries_3"
+    },
+    "facing=south,item_type=chocolate_glazed_berries,stack_count=4": {
+      "model": "createmechanicalconfection:block/tray/food_tray_chocolate_glazed_berries_3"
+    },
+    "facing=south,item_type=honeyed_apple,stack_count=0": {
+      "model": "createmechanicalconfection:block/tray/tray"
+    },
+    "facing=south,item_type=honeyed_apple,stack_count=1": {
+      "model": "createmechanicalconfection:block/tray/food_tray_honeyed_apple_1"
+    },
+    "facing=south,item_type=honeyed_apple,stack_count=2": {
+      "model": "createmechanicalconfection:block/tray/food_tray_honeyed_apple_2"
+    },
+    "facing=south,item_type=honeyed_apple,stack_count=3": {
+      "model": "createmechanicalconfection:block/tray/food_tray_honeyed_apple_3"
+    },
+    "facing=south,item_type=honeyed_apple,stack_count=4": {
+      "model": "createmechanicalconfection:block/tray/food_tray_honeyed_apple_4"
+    },
+    "facing=south,item_type=none,stack_count=0": {
+      "model": "createmechanicalconfection:block/tray/tray"
+    },
+    "facing=south,item_type=none,stack_count=1": {
+      "model": "createmechanicalconfection:block/tray/tray"
+    },
+    "facing=south,item_type=none,stack_count=2": {
+      "model": "createmechanicalconfection:block/tray/tray"
+    },
+    "facing=south,item_type=none,stack_count=3": {
+      "model": "createmechanicalconfection:block/tray/tray"
+    },
+    "facing=south,item_type=none,stack_count=4": {
+      "model": "createmechanicalconfection:block/tray/tray"
+    },
+    "facing=south,item_type=sweet_roll,stack_count=0": {
+      "model": "createmechanicalconfection:block/tray/tray"
+    },
+    "facing=south,item_type=sweet_roll,stack_count=1": {
+      "model": "createmechanicalconfection:block/tray/food_tray_sweet_roll_1"
+    },
+    "facing=south,item_type=sweet_roll,stack_count=2": {
+      "model": "createmechanicalconfection:block/tray/food_tray_sweet_roll_2"
+    },
+    "facing=south,item_type=sweet_roll,stack_count=3": {
+      "model": "createmechanicalconfection:block/tray/food_tray_sweet_roll_3"
+    },
+    "facing=south,item_type=sweet_roll,stack_count=4": {
+      "model": "createmechanicalconfection:block/tray/food_tray_sweet_roll_3"
+    },
+    "facing=west,item_type=bar_of_chocolate,stack_count=0": {
+      "model": "createmechanicalconfection:block/tray/tray",
+      "y": 90
+    },
+    "facing=west,item_type=bar_of_chocolate,stack_count=1": {
+      "model": "createmechanicalconfection:block/tray/food_tray_bar_of_chocolate_1",
+      "y": 90
+    },
+    "facing=west,item_type=bar_of_chocolate,stack_count=2": {
+      "model": "createmechanicalconfection:block/tray/food_tray_bar_of_chocolate_2",
+      "y": 90
+    },
+    "facing=west,item_type=bar_of_chocolate,stack_count=3": {
+      "model": "createmechanicalconfection:block/tray/food_tray_bar_of_chocolate_3",
+      "y": 90
+    },
+    "facing=west,item_type=bar_of_chocolate,stack_count=4": {
+      "model": "createmechanicalconfection:block/tray/food_tray_bar_of_chocolate_3",
+      "y": 90
+    },
+    "facing=west,item_type=builders_tea,stack_count=0": {
+      "model": "createmechanicalconfection:block/tray/tray",
+      "y": 90
+    },
+    "facing=west,item_type=builders_tea,stack_count=1": {
+      "model": "createmechanicalconfection:block/tray/food_tray_builders_tea_1",
+      "y": 90
+    },
+    "facing=west,item_type=builders_tea,stack_count=2": {
+      "model": "createmechanicalconfection:block/tray/food_tray_builders_tea_1",
+      "y": 90
+    },
+    "facing=west,item_type=builders_tea,stack_count=3": {
+      "model": "createmechanicalconfection:block/tray/food_tray_builders_tea_1",
+      "y": 90
+    },
+    "facing=west,item_type=builders_tea,stack_count=4": {
+      "model": "createmechanicalconfection:block/tray/food_tray_builders_tea_1",
+      "y": 90
+    },
+    "facing=west,item_type=chocolate_glazed_berries,stack_count=0": {
+      "model": "createmechanicalconfection:block/tray/tray",
+      "y": 90
+    },
+    "facing=west,item_type=chocolate_glazed_berries,stack_count=1": {
+      "model": "createmechanicalconfection:block/tray/food_tray_chocolate_glazed_berries_1",
+      "y": 90
+    },
+    "facing=west,item_type=chocolate_glazed_berries,stack_count=2": {
+      "model": "createmechanicalconfection:block/tray/food_tray_chocolate_glazed_berries_2",
+      "y": 90
+    },
+    "facing=west,item_type=chocolate_glazed_berries,stack_count=3": {
+      "model": "createmechanicalconfection:block/tray/food_tray_chocolate_glazed_berries_3",
+      "y": 90
+    },
+    "facing=west,item_type=chocolate_glazed_berries,stack_count=4": {
+      "model": "createmechanicalconfection:block/tray/food_tray_chocolate_glazed_berries_3",
+      "y": 90
+    },
+    "facing=west,item_type=honeyed_apple,stack_count=0": {
+      "model": "createmechanicalconfection:block/tray/tray",
+      "y": 90
+    },
+    "facing=west,item_type=honeyed_apple,stack_count=1": {
+      "model": "createmechanicalconfection:block/tray/food_tray_honeyed_apple_1",
+      "y": 90
+    },
+    "facing=west,item_type=honeyed_apple,stack_count=2": {
+      "model": "createmechanicalconfection:block/tray/food_tray_honeyed_apple_2",
+      "y": 90
+    },
+    "facing=west,item_type=honeyed_apple,stack_count=3": {
+      "model": "createmechanicalconfection:block/tray/food_tray_honeyed_apple_3",
+      "y": 90
+    },
+    "facing=west,item_type=honeyed_apple,stack_count=4": {
+      "model": "createmechanicalconfection:block/tray/food_tray_honeyed_apple_4",
+      "y": 90
+    },
+    "facing=west,item_type=none,stack_count=0": {
+      "model": "createmechanicalconfection:block/tray/tray",
+      "y": 90
+    },
+    "facing=west,item_type=none,stack_count=1": {
+      "model": "createmechanicalconfection:block/tray/tray",
+      "y": 90
+    },
+    "facing=west,item_type=none,stack_count=2": {
+      "model": "createmechanicalconfection:block/tray/tray",
+      "y": 90
+    },
+    "facing=west,item_type=none,stack_count=3": {
+      "model": "createmechanicalconfection:block/tray/tray",
+      "y": 90
+    },
+    "facing=west,item_type=none,stack_count=4": {
+      "model": "createmechanicalconfection:block/tray/tray",
+      "y": 90
+    },
+    "facing=west,item_type=sweet_roll,stack_count=0": {
+      "model": "createmechanicalconfection:block/tray/tray",
+      "y": 90
+    },
+    "facing=west,item_type=sweet_roll,stack_count=1": {
+      "model": "createmechanicalconfection:block/tray/food_tray_sweet_roll_1",
+      "y": 90
+    },
+    "facing=west,item_type=sweet_roll,stack_count=2": {
+      "model": "createmechanicalconfection:block/tray/food_tray_sweet_roll_2",
+      "y": 90
+    },
+    "facing=west,item_type=sweet_roll,stack_count=3": {
+      "model": "createmechanicalconfection:block/tray/food_tray_sweet_roll_3",
+      "y": 90
+    },
+    "facing=west,item_type=sweet_roll,stack_count=4": {
+      "model": "createmechanicalconfection:block/tray/food_tray_sweet_roll_3",
+      "y": 90
+    }
+  }
+}

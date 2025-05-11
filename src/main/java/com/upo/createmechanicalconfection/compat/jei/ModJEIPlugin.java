@@ -46,6 +46,11 @@ public class ModJEIPlugin implements IModPlugin {
         ItemStack etCakeOutput = new ItemStack(CMCBlocks.TUBE_CAKE_BLOCK.get());
         bakingDisplayRecipes.add(new OvenDisplayRecipe(etBatterInput, etCakeOutput));
 
+        //熔盐储罐显示配方
+        Ingredient tankBatterInput = Ingredient.of(CMCBlocks.FILLED_TANK_CAKE_BATTER_BLOCK.get());
+        ItemStack tankCakeOutput = new ItemStack(CMCBlocks.TANK_CAKE_BLOCK.get());
+        bakingDisplayRecipes.add(new OvenDisplayRecipe(tankBatterInput, tankCakeOutput));
+
 
         registration.addRecipes(MechanicalOvenRecipeCategory.TYPE, bakingDisplayRecipes);
     }
